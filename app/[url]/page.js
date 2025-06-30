@@ -11,7 +11,6 @@ export default async function Page({ params }) {
     const doc = await collection.findOne({shorturl: url})
     if(doc){
           redirect(doc.url)
-
     }
     else{
         redirect(`${process.env.NEXT_PUBLIC_HOST}`)
