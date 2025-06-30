@@ -22,9 +22,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-purple-50`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-purple-50 min-h-screen flex flex-col`}
       >
-        <div className="flex flex-col">
+        
           
         <Navbar />
         <main className="flex-1">
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         </main>
         <Footer />
         
-        </div>
+        
       </body>
     </html>
   );
